@@ -1,0 +1,45 @@
+version: "2.0"
+nlu:
+- intent: saudar
+  examples: |
+    - oi
+    - olá
+    - bom dia
+    - boa tarde
+    - boa noite
+    - oi, tudo bem?
+
+- intent: pedir_pizza
+  examples: |
+    - Eu gostaria de pedir uma pizza
+    - Quero uma pizza, por favor
+    - Pode me ajudar a pedir uma pizza?
+    - Como faço para pedir uma pizza aqui?
+
+- intent: especificar_pizza
+  examples: |
+    - Quero uma pizza de [calabresa](sabor)
+    - Uma pizza de [mussarela](sabor), por favor
+    - Pode ser de [quatro queijos](sabor)
+    - Eu gostaria de uma pizza de [pepperoni](sabor)
+
+- intent: informar_endereco
+  examples: |
+    - O endereço de entrega é [Rua das Flores, 123](endereco)
+    - Entregar em [Av. Paulista, 999](endereco)
+    - Meu endereço é [Praça da Sé, 45](endereco)
+    - [Alameda Santos, 1010](endereco), por favor
+
+- intent: confirmar_pedido
+  examples: |
+    - Sim, está tudo certo
+    - Isso mesmo, pode confirmar
+    - Confirma o pedido
+    - Tudo certo, pode fazer o pedido
+
+- intent: cancelar_pedido
+  examples: |
+    - Quero cancelar o pedido
+    - Cancela, por favor
+    - Não quero mais a pizza
+    - Desisto do pedido
